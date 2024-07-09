@@ -1,10 +1,10 @@
 They are Niono coluzzii samples (mostly females, check), first 96 of them. The raw data include all accessible biallelic sites (missing alleles are permitted). 
 
-I first chop each chromosome arm into 50kb chunks, from which I define 500 non-overlapping 100bp windows. I randomly select some 100bp window from each chunk to run LD-hat. 
+I first chop each chromosome arm into 50kb chunks, from which I define 500 non-overlapping 100bp windows (500 x 100bp = 50kb). I randomly select some 100bp window from each chunk to run LD-hat. 
 
 Another criteria included is the number of polymorphic (biallelic to be exact) sites within each 100bp window. Only windows with >=20 polymorphic sites are sent to LD-hat. 
 
-The chunks are unimportant as they are for stratified sampling. 
+The chunks are unimportant as they are only for stratified sampling. 
 
 The inputs are unphased genotypes, coded as 0, 1, 2 as per the manual of LD-hat. Missing are coded as question marks (?). The conversion model is assumed. 
 
@@ -12,6 +12,6 @@ I am using the pre-compiled likelihood lookup table with 96 diploids and theta o
 
 Because of the random sampling of 100bp windows within each chunk I do not have control on the total number of windows we ontain from LD-hat. 
 
-But overall 3R has ~40000 windows. 
+At the end 3R has ~40000 windows, and X has ~20000.  
 
 Some plots can be found in the notebook. 
