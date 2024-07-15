@@ -5,3 +5,5 @@ Same 96 Niono coluzzii, same settings, but with 2 changes:
 We cannot detect any recombination if there is zero or one polymorphic sites. The minimum is two. Therefore we use >=2 as the criteria. 
 
 2) The second improvement is the exhaustive evaluation of all 100bp windows. No more random sampling of windows - I go through them one by one. It takes some time. 
+
+See also the readme from run1. 
