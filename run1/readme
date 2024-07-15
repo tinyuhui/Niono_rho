@@ -8,7 +8,9 @@ The chunks are unimportant as they are only for stratified sampling.
 
 The inputs are unphased genotypes, coded as 0, 1, 2 as per the manual of LD-hat. Missing are coded as question marks (?). The conversion model is assumed. 
 
-I am using the pre-compiled likelihood lookup table with 96 diploids and theta of 0.001. 
+I am using the pre-compiled likelihood lookup table with 96 diploids and theta of 0.001. Note that with this table LD-hat searches fror the "best" per-window rho estimate between 0 and 101. It is possible for a window to have a rho estimate of 101 (stuck at the upper bound). 
+The rho estimate is for this window. If you want to find the "per base pair rho" you need to divide the rho estimate by the window width (which is 100bp here). 
+This is also the reason why we use 100bp window because wider window will yield larger rho estiamte and this often exceeds the upper limit of 101. 
 
 Because of the random sampling of 100bp windows within each chunk I do not have control on the total number of windows we ontain from LD-hat. 
 
