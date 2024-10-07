@@ -1,9 +1,9 @@
 Here's the second run, mostly related to the summer project. 
 
 Same 96 Niono coluzzii, same settings, but with 2 changes: 
-1) I relax the assumption of having >=20 polymorphic sites. There was a speculation on the potential bias on the estimated rho if we cherry-pick the windows with the highest polymorphism. 
-We cannot detect any recombination if there is zero or one polymorphic sites. The minimum is two. Therefore we use >=2 as the criteria. 
+1) I relax the assumption of having >=20 polymorphic sites. We are unsure about the potential bias on the rho estimates if we cherry-pick the windows with the highest polymorphism. 
+Besides, we cannot detect any recombination if there is zero or one polymorphic sites. Therefore having >=2 polymorphic sites is the bare minimum. NA otherwise. 
 
-2) The second improvement is the exhaustive evaluation of all 100bp windows. No more random sampling of windows - I go through them one by one. It takes some time. 
+2) The second improvement is the exhaustive evaluation of all 100bp windows. No more random sampling of windows. 
 
 See also the readme from run1. 
